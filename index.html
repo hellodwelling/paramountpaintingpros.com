@@ -910,7 +910,7 @@
     <div
         x-data="{
         activeImage: 1,
-        amountOfImages: 2,
+        amountOfImages: 4,
         loop() {
             setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
         },
@@ -951,7 +951,45 @@
             
                 <img
                     class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/071d0fd3-87a9-4768-9fc7-fc8ae94f18b9.jpeg"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/de704ad1-9e9c-4c4c-bf18-66d1dd01c3be.jpeg"
+                    alt="Painting company Paramount Painting in Glen Falls, NY"
+                />
+            
+        </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 3"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            
+                <img
+                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9d5de070-d341-45c1-a0a2-49dc4750ab36.png"
+                    alt="Painting company Paramount Painting in Glen Falls, NY"
+                />
+            
+        </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 4"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            
+                <img
+                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8be604f1-72a8-4357-975f-1a6afe512af6.png"
                     alt="Painting company Paramount Painting in Glen Falls, NY"
                 />
             
